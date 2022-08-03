@@ -1,0 +1,827 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E901179BC9BF90ED6633F09 /* libPods-FleetBattleGameForIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7CF5F83F2C1DDE51AF79970 /* libPods-FleetBattleGameForIOS.a */; };
+		8A098575274C07CC003A56A8 /* HelperButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A098574274C07CC003A56A8 /* HelperButtons.swift */; };
+		8A41D59A27343436007AE13D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A41D59927343436007AE13D /* AppDelegate.swift */; };
+		8A41D59C27343436007AE13D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A41D59B27343436007AE13D /* SceneDelegate.swift */; };
+		8A41D59E27343436007AE13D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A41D59D27343436007AE13D /* LoginView.swift */; };
+		8A41D5A027343438007AE13D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A41D59F27343438007AE13D /* Assets.xcassets */; };
+		8A41D5A327343438007AE13D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A41D5A227343438007AE13D /* Preview Assets.xcassets */; };
+		8A41D5A627343438007AE13D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A41D5A427343438007AE13D /* LaunchScreen.storyboard */; };
+		8A41D5B927343B75007AE13D /* FirebaseFirestorePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A41D5B627343B75007AE13D /* FirebaseFirestorePlugin.swift */; };
+		8A41D5BA27343B75007AE13D /* FirebaseAuthenticationPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A41D5B827343B75007AE13D /* FirebaseAuthenticationPlugin.swift */; };
+		8A41D5BC27344196007AE13D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A41D5BB27344196007AE13D /* GoogleService-Info.plist */; };
+		8A4945CC2785EF3600031466 /* MultiplayerGameSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4945CB2785EF3600031466 /* MultiplayerGameSettingsView.swift */; };
+		8A4945CF2785EF4B00031466 /* MultiplayerGameSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4945CE2785EF4B00031466 /* MultiplayerGameSettingsViewController.swift */; };
+		8A4945D22785EF5B00031466 /* MultiplayerGameSettingsModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4945D12785EF5B00031466 /* MultiplayerGameSettingsModelController.swift */; };
+		8A4ACDC1276BA8C100F6D413 /* DateTimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4ACDC0276BA8C100F6D413 /* DateTimeHelper.swift */; };
+		8A4ACDC4276BB32E00F6D413 /* GameListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4ACDC3276BB32E00F6D413 /* GameListItemView.swift */; };
+		8A4BFEE627760CE8009B329C /* ShipHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BFEE527760CE8009B329C /* ShipHelper.swift */; };
+		8A4BFEE9277612E3009B329C /* PlaceShipFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BFEE8277612E3009B329C /* PlaceShipFeedback.swift */; };
+		8A4C98232788BD850098BCD7 /* SnapshotListenerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C98222788BD850098BCD7 /* SnapshotListenerInterface.swift */; };
+		8A4C983B2788BF7C0098BCD7 /* FleetBattleKI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C983A2788BF7C0098BCD7 /* FleetBattleKI.swift */; };
+		8A4C98502788D8D50098BCD7 /* SnapshotListenerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C984F2788D8D50098BCD7 /* SnapshotListenerHelper.swift */; };
+		8A4CD28B277DE8510022AC84 /* ShipPlacementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4CD28A277DE8510022AC84 /* ShipPlacementService.swift */; };
+		8A4E374F276A64B300278418 /* TPRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E374E276A64B300278418 /* TPRandom.swift */; };
+		8A4E3752276A958200278418 /* IdentifiableIndices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E3751276A958200278418 /* IdentifiableIndices.swift */; };
+		8A4E55C12790D764002002EF /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E55C02790D764002002EF /* KeyboardHelper.swift */; };
+		8A4FCBF32748431E004ABE4A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FCBF22748431E004ABE4A /* RegisterViewController.swift */; };
+		8A4FCBF527484358004ABE4A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FCBF427484358004ABE4A /* MenuViewController.swift */; };
+		8A4FCBF727484371004ABE4A /* SingleplayerGameSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FCBF627484371004ABE4A /* SingleplayerGameSettingsViewController.swift */; };
+		8A4FCBF92748437D004ABE4A /* OpenGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FCBF82748437D004ABE4A /* OpenGamesViewController.swift */; };
+		8A4FCBFB27484390004ABE4A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FCBFA27484390004ABE4A /* GameViewController.swift */; };
+		8A4FCBFD274843A3004ABE4A /* GameResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FCBFC274843A3004ABE4A /* GameResultViewController.swift */; };
+		8A4FCBFF274843E5004ABE4A /* RegisterModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FCBFE274843E5004ABE4A /* RegisterModelController.swift */; };
+		8A4FCC01274843F7004ABE4A /* SingleplayerGameSettingsModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FCC00274843F7004ABE4A /* SingleplayerGameSettingsModelController.swift */; };
+		8A4FCC032748440A004ABE4A /* PrepareGameModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FCC022748440A004ABE4A /* PrepareGameModelController.swift */; };
+		8A4FCC0527484422004ABE4A /* OpenGamesModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FCC0427484422004ABE4A /* OpenGamesModelController.swift */; };
+		8A4FCC0727484431004ABE4A /* GameModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FCC0627484431004ABE4A /* GameModelController.swift */; };
+		8A510B032749937400EFB4A1 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A510B022749937400EFB4A1 /* StartView.swift */; };
+		8A510B052749A97300EFB4A1 /* NavigationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A510B042749A97300EFB4A1 /* NavigationConfiguration.swift */; };
+		8A57EEA727554DB200506F09 /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57EEA627554DB200506F09 /* Serializable.swift */; };
+		8A57EEA92755512C00506F09 /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57EEA82755512C00506F09 /* GameService.swift */; };
+		8A57EEAB2755515700506F09 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57EEAA2755515700506F09 /* DatabaseService.swift */; };
+		8A57EEAD27557F0F00506F09 /* GameObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A57EEAC27557F0F00506F09 /* GameObservableObject.swift */; };
+		8A6C5F472747F7A4006B0863 /* PrepareGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F462747F7A4006B0863 /* PrepareGameViewController.swift */; };
+		8A6C5F4D2747F830006B0863 /* DifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F4C2747F830006B0863 /* DifficultyLevel.swift */; };
+		8A6C5F4F2747F839006B0863 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F4E2747F839006B0863 /* Game.swift */; };
+		8A6C5F512747F842006B0863 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F502747F842006B0863 /* GameMode.swift */; };
+		8A6C5F532747F84B006B0863 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F522747F84B006B0863 /* User.swift */; };
+		8A6C5F552747F856006B0863 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F542747F856006B0863 /* Field.swift */; };
+		8A6C5F572747F85F006B0863 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F562747F85F006B0863 /* Grid.swift */; };
+		8A6C5F592747F86A006B0863 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F582747F86A006B0863 /* Position.swift */; };
+		8A6C5F5B2747F87B006B0863 /* GridHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F5A2747F87B006B0863 /* GridHelper.swift */; };
+		8A6C5F5D2747F890006B0863 /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F5C2747F890006B0863 /* Orientation.swift */; };
+		8A6C5F5F2747F898006B0863 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F5E2747F898006B0863 /* Ship.swift */; };
+		8A6C5F612747F8A4006B0863 /* ShipDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F602747F8A4006B0863 /* ShipDetails.swift */; };
+		8A6C5F632747F8C3006B0863 /* FleetBattleField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F622747F8C3006B0863 /* FleetBattleField.swift */; };
+		8A6C5F652747F8CE006B0863 /* FleetBattleGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F642747F8CE006B0863 /* FleetBattleGame.swift */; };
+		8A6C5F672747F8DD006B0863 /* FleetBattleGameDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F662747F8DD006B0863 /* FleetBattleGameDetails.swift */; };
+		8A6C5F692747F8E8006B0863 /* FleetBattleGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F682747F8E8006B0863 /* FleetBattleGrid.swift */; };
+		8A6C5F6C27482FC6006B0863 /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F6B27482FC6006B0863 /* Values.swift */; };
+		8A6C5F6E27483806006B0863 /* LabelledDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C5F6D27483806006B0863 /* LabelledDivider.swift */; };
+		8A92A25027441D22000ACAC2 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A92A24F27441D22000ACAC2 /* RegisterView.swift */; };
+		8A92A25227441D2F000ACAC2 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A92A25127441D2F000ACAC2 /* MenuView.swift */; };
+		8A92A25427441D3E000ACAC2 /* SingleplayerGameSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A92A25327441D3E000ACAC2 /* SingleplayerGameSettingsView.swift */; };
+		8A92A25627441D4E000ACAC2 /* OpenGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A92A25527441D4E000ACAC2 /* OpenGamesView.swift */; };
+		8A92A25827441D5E000ACAC2 /* PrepareGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A92A25727441D5E000ACAC2 /* PrepareGameView.swift */; };
+		8A92A25A27441D6C000ACAC2 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A92A25927441D6C000ACAC2 /* GameView.swift */; };
+		8A92A25C27441D7A000ACAC2 /* GameResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A92A25B27441D7A000ACAC2 /* GameResultView.swift */; };
+		8A92A25E27441D91000ACAC2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A92A25D27441D91000ACAC2 /* LoginViewController.swift */; };
+		8A92A26027441D9D000ACAC2 /* LoginModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A92A25F27441D9D000ACAC2 /* LoginModelController.swift */; };
+		8A92A26227441DB1000ACAC2 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A92A26127441DB1000ACAC2 /* AuthenticationService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		80FC005C4CCA4F79CEF967CE /* Pods-FleetBattleGameForIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FleetBattleGameForIOS.release.xcconfig"; path = "Target Support Files/Pods-FleetBattleGameForIOS/Pods-FleetBattleGameForIOS.release.xcconfig"; sourceTree = "<group>"; };
+		8A098574274C07CC003A56A8 /* HelperButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperButtons.swift; sourceTree = "<group>"; };
+		8A41D59627343436007AE13D /* FleetBattleGameForIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FleetBattleGameForIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A41D59927343436007AE13D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A41D59B27343436007AE13D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8A41D59D27343436007AE13D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8A41D59F27343438007AE13D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A41D5A227343438007AE13D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A41D5A527343438007AE13D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A41D5A727343438007AE13D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A41D5B627343B75007AE13D /* FirebaseFirestorePlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseFirestorePlugin.swift; sourceTree = "<group>"; };
+		8A41D5B827343B75007AE13D /* FirebaseAuthenticationPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticationPlugin.swift; sourceTree = "<group>"; };
+		8A41D5BB27344196007AE13D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A4945CB2785EF3600031466 /* MultiplayerGameSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerGameSettingsView.swift; sourceTree = "<group>"; };
+		8A4945CE2785EF4B00031466 /* MultiplayerGameSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerGameSettingsViewController.swift; sourceTree = "<group>"; };
+		8A4945D12785EF5B00031466 /* MultiplayerGameSettingsModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerGameSettingsModelController.swift; sourceTree = "<group>"; };
+		8A4ACDC0276BA8C100F6D413 /* DateTimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeHelper.swift; sourceTree = "<group>"; };
+		8A4ACDC3276BB32E00F6D413 /* GameListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListItemView.swift; sourceTree = "<group>"; };
+		8A4BFEE527760CE8009B329C /* ShipHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipHelper.swift; sourceTree = "<group>"; };
+		8A4BFEE8277612E3009B329C /* PlaceShipFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceShipFeedback.swift; sourceTree = "<group>"; };
+		8A4C98222788BD850098BCD7 /* SnapshotListenerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotListenerInterface.swift; sourceTree = "<group>"; };
+		8A4C983A2788BF7C0098BCD7 /* FleetBattleKI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetBattleKI.swift; sourceTree = "<group>"; };
+		8A4C984F2788D8D50098BCD7 /* SnapshotListenerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotListenerHelper.swift; sourceTree = "<group>"; };
+		8A4CD28A277DE8510022AC84 /* ShipPlacementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipPlacementService.swift; sourceTree = "<group>"; };
+		8A4E374E276A64B300278418 /* TPRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPRandom.swift; sourceTree = "<group>"; };
+		8A4E3751276A958200278418 /* IdentifiableIndices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableIndices.swift; sourceTree = "<group>"; };
+		8A4E55C02790D764002002EF /* KeyboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
+		8A4FCBF22748431E004ABE4A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8A4FCBF427484358004ABE4A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		8A4FCBF627484371004ABE4A /* SingleplayerGameSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleplayerGameSettingsViewController.swift; sourceTree = "<group>"; };
+		8A4FCBF82748437D004ABE4A /* OpenGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGamesViewController.swift; sourceTree = "<group>"; };
+		8A4FCBFA27484390004ABE4A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		8A4FCBFC274843A3004ABE4A /* GameResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultViewController.swift; sourceTree = "<group>"; };
+		8A4FCBFE274843E5004ABE4A /* RegisterModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModelController.swift; sourceTree = "<group>"; };
+		8A4FCC00274843F7004ABE4A /* SingleplayerGameSettingsModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleplayerGameSettingsModelController.swift; sourceTree = "<group>"; };
+		8A4FCC022748440A004ABE4A /* PrepareGameModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareGameModelController.swift; sourceTree = "<group>"; };
+		8A4FCC0427484422004ABE4A /* OpenGamesModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGamesModelController.swift; sourceTree = "<group>"; };
+		8A4FCC0627484431004ABE4A /* GameModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModelController.swift; sourceTree = "<group>"; };
+		8A510B022749937400EFB4A1 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		8A510B042749A97300EFB4A1 /* NavigationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfiguration.swift; sourceTree = "<group>"; };
+		8A57EEA627554DB200506F09 /* Serializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializable.swift; sourceTree = "<group>"; };
+		8A57EEA82755512C00506F09 /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		8A57EEAA2755515700506F09 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		8A57EEAC27557F0F00506F09 /* GameObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObservableObject.swift; sourceTree = "<group>"; };
+		8A6C5F462747F7A4006B0863 /* PrepareGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareGameViewController.swift; sourceTree = "<group>"; };
+		8A6C5F4C2747F830006B0863 /* DifficultyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyLevel.swift; sourceTree = "<group>"; };
+		8A6C5F4E2747F839006B0863 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		8A6C5F502747F842006B0863 /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
+		8A6C5F522747F84B006B0863 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8A6C5F542747F856006B0863 /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		8A6C5F562747F85F006B0863 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		8A6C5F582747F86A006B0863 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		8A6C5F5A2747F87B006B0863 /* GridHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridHelper.swift; sourceTree = "<group>"; };
+		8A6C5F5C2747F890006B0863 /* Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
+		8A6C5F5E2747F898006B0863 /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
+		8A6C5F602747F8A4006B0863 /* ShipDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipDetails.swift; sourceTree = "<group>"; };
+		8A6C5F622747F8C3006B0863 /* FleetBattleField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetBattleField.swift; sourceTree = "<group>"; };
+		8A6C5F642747F8CE006B0863 /* FleetBattleGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetBattleGame.swift; sourceTree = "<group>"; };
+		8A6C5F662747F8DD006B0863 /* FleetBattleGameDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetBattleGameDetails.swift; sourceTree = "<group>"; };
+		8A6C5F682747F8E8006B0863 /* FleetBattleGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetBattleGrid.swift; sourceTree = "<group>"; };
+		8A6C5F6B27482FC6006B0863 /* Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Values.swift; sourceTree = "<group>"; };
+		8A6C5F6D27483806006B0863 /* LabelledDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledDivider.swift; sourceTree = "<group>"; };
+		8A92A24F27441D22000ACAC2 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		8A92A25127441D2F000ACAC2 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		8A92A25327441D3E000ACAC2 /* SingleplayerGameSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleplayerGameSettingsView.swift; sourceTree = "<group>"; };
+		8A92A25527441D4E000ACAC2 /* OpenGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGamesView.swift; sourceTree = "<group>"; };
+		8A92A25727441D5E000ACAC2 /* PrepareGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareGameView.swift; sourceTree = "<group>"; };
+		8A92A25927441D6C000ACAC2 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		8A92A25B27441D7A000ACAC2 /* GameResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultView.swift; sourceTree = "<group>"; };
+		8A92A25D27441D91000ACAC2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8A92A25F27441D9D000ACAC2 /* LoginModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModelController.swift; sourceTree = "<group>"; };
+		8A92A26127441DB1000ACAC2 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		C5CF01FD96CB152CEA08383E /* Pods-FleetBattleGameForIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FleetBattleGameForIOS.debug.xcconfig"; path = "Target Support Files/Pods-FleetBattleGameForIOS/Pods-FleetBattleGameForIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		CC17114E04A429FAE9455732 /* Pods-FleetBattleGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FleetBattleGame.release.xcconfig"; path = "Target Support Files/Pods-FleetBattleGame/Pods-FleetBattleGame.release.xcconfig"; sourceTree = "<group>"; };
+		F7CF5F83F2C1DDE51AF79970 /* libPods-FleetBattleGameForIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FleetBattleGameForIOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC00EFECEE345C76F68BE07 /* Pods-FleetBattleGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FleetBattleGame.debug.xcconfig"; path = "Target Support Files/Pods-FleetBattleGame/Pods-FleetBattleGame.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A41D59327343436007AE13D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E901179BC9BF90ED6633F09 /* libPods-FleetBattleGameForIOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A41D58D27343435007AE13D = {
+			isa = PBXGroup;
+			children = (
+				8A41D59827343436007AE13D /* FleetBattleGameForIOS */,
+				8A41D59727343436007AE13D /* Products */,
+				9AC262DB21E861D7B307D8ED /* Pods */,
+				BFE90D724773645F3FE40650 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A41D59727343436007AE13D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A41D59627343436007AE13D /* FleetBattleGameForIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A41D59827343436007AE13D /* FleetBattleGameForIOS */ = {
+			isa = PBXGroup;
+			children = (
+				8A92A2452743EFE2000ACAC2 /* controller */,
+				8A92A2482743EFF7000ACAC2 /* model */,
+				8A41D5AF273436F3007AE13D /* view */,
+				8A41D5B127343746007AE13D /* supporting */,
+				8A41D5B02734372B007AE13D /* libraries */,
+				8A41D59F27343438007AE13D /* Assets.xcassets */,
+				8A41D5A427343438007AE13D /* LaunchScreen.storyboard */,
+				8A41D5A727343438007AE13D /* Info.plist */,
+				8A41D5BB27344196007AE13D /* GoogleService-Info.plist */,
+				8A41D5A127343438007AE13D /* Preview Content */,
+			);
+			path = FleetBattleGameForIOS;
+			sourceTree = "<group>";
+		};
+		8A41D5A127343438007AE13D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8A41D5A227343438007AE13D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A41D5AF273436F3007AE13D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				8A57EEA527554D9600506F09 /* modelHelper */,
+				8A6C5F6A27482F3A006B0863 /* helper */,
+				8A92A24E27441CF4000ACAC2 /* viewUI */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		8A41D5B02734372B007AE13D /* libraries */ = {
+			isa = PBXGroup;
+			children = (
+				8A4E374D276A64AA00278418 /* Random */,
+				8A41D5B427343B75007AE13D /* Firebase */,
+			);
+			path = libraries;
+			sourceTree = "<group>";
+		};
+		8A41D5B127343746007AE13D /* supporting */ = {
+			isa = PBXGroup;
+			children = (
+				8A41D59927343436007AE13D /* AppDelegate.swift */,
+				8A41D59B27343436007AE13D /* SceneDelegate.swift */,
+			);
+			path = supporting;
+			sourceTree = "<group>";
+		};
+		8A41D5B427343B75007AE13D /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				8A41D5B527343B75007AE13D /* Firestore */,
+				8A41D5B727343B75007AE13D /* Authentication */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		8A41D5B527343B75007AE13D /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				8A41D5B627343B75007AE13D /* FirebaseFirestorePlugin.swift */,
+			);
+			path = Firestore;
+			sourceTree = "<group>";
+		};
+		8A41D5B727343B75007AE13D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				8A41D5B827343B75007AE13D /* FirebaseAuthenticationPlugin.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		8A4E374D276A64AA00278418 /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				8A4E374E276A64B300278418 /* TPRandom.swift */,
+			);
+			path = Random;
+			sourceTree = "<group>";
+		};
+		8A57EEA527554D9600506F09 /* modelHelper */ = {
+			isa = PBXGroup;
+			children = (
+				8A57EEA627554DB200506F09 /* Serializable.swift */,
+				8A57EEAC27557F0F00506F09 /* GameObservableObject.swift */,
+				8A4C984F2788D8D50098BCD7 /* SnapshotListenerHelper.swift */,
+			);
+			path = modelHelper;
+			sourceTree = "<group>";
+		};
+		8A6C5F482747F7B5006B0863 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				8A6C5F4C2747F830006B0863 /* DifficultyLevel.swift */,
+				8A6C5F4E2747F839006B0863 /* Game.swift */,
+				8A6C5F502747F842006B0863 /* GameMode.swift */,
+				8A6C5F522747F84B006B0863 /* User.swift */,
+			);
+			path = game;
+			sourceTree = "<group>";
+		};
+		8A6C5F492747F7BD006B0863 /* grid */ = {
+			isa = PBXGroup;
+			children = (
+				8A6C5F542747F856006B0863 /* Field.swift */,
+				8A6C5F562747F85F006B0863 /* Grid.swift */,
+				8A6C5F582747F86A006B0863 /* Position.swift */,
+			);
+			path = grid;
+			sourceTree = "<group>";
+		};
+		8A6C5F4A2747F7ED006B0863 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				8A6C5F5A2747F87B006B0863 /* GridHelper.swift */,
+				8A4BFEE527760CE8009B329C /* ShipHelper.swift */,
+				8A4BFEE8277612E3009B329C /* PlaceShipFeedback.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		8A6C5F4B2747F7F9006B0863 /* ship */ = {
+			isa = PBXGroup;
+			children = (
+				8A6C5F5C2747F890006B0863 /* Orientation.swift */,
+				8A6C5F5E2747F898006B0863 /* Ship.swift */,
+				8A6C5F602747F8A4006B0863 /* ShipDetails.swift */,
+			);
+			path = ship;
+			sourceTree = "<group>";
+		};
+		8A6C5F6A27482F3A006B0863 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				8A6C5F6B27482FC6006B0863 /* Values.swift */,
+				8A6C5F6D27483806006B0863 /* LabelledDivider.swift */,
+				8A510B022749937400EFB4A1 /* StartView.swift */,
+				8A510B042749A97300EFB4A1 /* NavigationConfiguration.swift */,
+				8A098574274C07CC003A56A8 /* HelperButtons.swift */,
+				8A4E3751276A958200278418 /* IdentifiableIndices.swift */,
+				8A4ACDC0276BA8C100F6D413 /* DateTimeHelper.swift */,
+				8A4ACDC3276BB32E00F6D413 /* GameListItemView.swift */,
+				8A4E55C02790D764002002EF /* KeyboardHelper.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		8A92A2452743EFE2000ACAC2 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				8A92A2462743EFE9000ACAC2 /* model */,
+				8A92A2472743EFF1000ACAC2 /* view */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		8A92A2462743EFE9000ACAC2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8A92A25F27441D9D000ACAC2 /* LoginModelController.swift */,
+				8A4FCBFE274843E5004ABE4A /* RegisterModelController.swift */,
+				8A4FCC00274843F7004ABE4A /* SingleplayerGameSettingsModelController.swift */,
+				8A4FCC0427484422004ABE4A /* OpenGamesModelController.swift */,
+				8A4FCC022748440A004ABE4A /* PrepareGameModelController.swift */,
+				8A4FCC0627484431004ABE4A /* GameModelController.swift */,
+				8A4945D12785EF5B00031466 /* MultiplayerGameSettingsModelController.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		8A92A2472743EFF1000ACAC2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				8A92A25D27441D91000ACAC2 /* LoginViewController.swift */,
+				8A4FCBF22748431E004ABE4A /* RegisterViewController.swift */,
+				8A4FCBF427484358004ABE4A /* MenuViewController.swift */,
+				8A4FCBF627484371004ABE4A /* SingleplayerGameSettingsViewController.swift */,
+				8A4FCBF82748437D004ABE4A /* OpenGamesViewController.swift */,
+				8A6C5F462747F7A4006B0863 /* PrepareGameViewController.swift */,
+				8A4FCBFA27484390004ABE4A /* GameViewController.swift */,
+				8A4FCBFC274843A3004ABE4A /* GameResultViewController.swift */,
+				8A4945CE2785EF4B00031466 /* MultiplayerGameSettingsViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		8A92A2482743EFF7000ACAC2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8A6C5F482747F7B5006B0863 /* game */,
+				8A6C5F492747F7BD006B0863 /* grid */,
+				8A6C5F4A2747F7ED006B0863 /* helper */,
+				8A6C5F4B2747F7F9006B0863 /* ship */,
+				8A92A2492743EFFF000ACAC2 /* services */,
+				8A6C5F622747F8C3006B0863 /* FleetBattleField.swift */,
+				8A6C5F642747F8CE006B0863 /* FleetBattleGame.swift */,
+				8A6C5F662747F8DD006B0863 /* FleetBattleGameDetails.swift */,
+				8A6C5F682747F8E8006B0863 /* FleetBattleGrid.swift */,
+				8A4C983A2788BF7C0098BCD7 /* FleetBattleKI.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		8A92A2492743EFFF000ACAC2 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				8A92A26127441DB1000ACAC2 /* AuthenticationService.swift */,
+				8A57EEA82755512C00506F09 /* GameService.swift */,
+				8A57EEAA2755515700506F09 /* DatabaseService.swift */,
+				8A4CD28A277DE8510022AC84 /* ShipPlacementService.swift */,
+				8A4C98222788BD850098BCD7 /* SnapshotListenerInterface.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		8A92A24E27441CF4000ACAC2 /* viewUI */ = {
+			isa = PBXGroup;
+			children = (
+				8A41D59D27343436007AE13D /* LoginView.swift */,
+				8A92A24F27441D22000ACAC2 /* RegisterView.swift */,
+				8A92A25127441D2F000ACAC2 /* MenuView.swift */,
+				8A92A25327441D3E000ACAC2 /* SingleplayerGameSettingsView.swift */,
+				8A92A25527441D4E000ACAC2 /* OpenGamesView.swift */,
+				8A92A25727441D5E000ACAC2 /* PrepareGameView.swift */,
+				8A92A25927441D6C000ACAC2 /* GameView.swift */,
+				8A92A25B27441D7A000ACAC2 /* GameResultView.swift */,
+				8A4945CB2785EF3600031466 /* MultiplayerGameSettingsView.swift */,
+			);
+			path = viewUI;
+			sourceTree = "<group>";
+		};
+		9AC262DB21E861D7B307D8ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCC00EFECEE345C76F68BE07 /* Pods-FleetBattleGame.debug.xcconfig */,
+				CC17114E04A429FAE9455732 /* Pods-FleetBattleGame.release.xcconfig */,
+				C5CF01FD96CB152CEA08383E /* Pods-FleetBattleGameForIOS.debug.xcconfig */,
+				80FC005C4CCA4F79CEF967CE /* Pods-FleetBattleGameForIOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BFE90D724773645F3FE40650 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7CF5F83F2C1DDE51AF79970 /* libPods-FleetBattleGameForIOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A41D59527343436007AE13D /* FleetBattleGameForIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A41D5AA27343438007AE13D /* Build configuration list for PBXNativeTarget "FleetBattleGameForIOS" */;
+			buildPhases = (
+				FEA726DEE09C3243E070D572 /* [CP] Check Pods Manifest.lock */,
+				8A41D59227343436007AE13D /* Sources */,
+				8A41D59327343436007AE13D /* Frameworks */,
+				8A41D59427343436007AE13D /* Resources */,
+				5402D4E1F2A22A846953C612 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FleetBattleGameForIOS;
+			productName = FleetBattleGame;
+			productReference = 8A41D59627343436007AE13D /* FleetBattleGameForIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A41D58E27343435007AE13D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = FMA2;
+				TargetAttributes = {
+					8A41D59527343436007AE13D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8A41D59127343435007AE13D /* Build configuration list for PBXProject "FleetBattleGameForIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A41D58D27343435007AE13D;
+			productRefGroup = 8A41D59727343436007AE13D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A41D59527343436007AE13D /* FleetBattleGameForIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A41D59427343436007AE13D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A41D5A627343438007AE13D /* LaunchScreen.storyboard in Resources */,
+				8A41D5BC27344196007AE13D /* GoogleService-Info.plist in Resources */,
+				8A41D5A327343438007AE13D /* Preview Assets.xcassets in Resources */,
+				8A41D5A027343438007AE13D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5402D4E1F2A22A846953C612 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FleetBattleGameForIOS/Pods-FleetBattleGameForIOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FleetBattleGameForIOS/Pods-FleetBattleGameForIOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FleetBattleGameForIOS/Pods-FleetBattleGameForIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEA726DEE09C3243E070D572 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FleetBattleGameForIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A41D59227343436007AE13D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A57EEAB2755515700506F09 /* DatabaseService.swift in Sources */,
+				8A4CD28B277DE8510022AC84 /* ShipPlacementService.swift in Sources */,
+				8A4FCBF92748437D004ABE4A /* OpenGamesViewController.swift in Sources */,
+				8A92A25227441D2F000ACAC2 /* MenuView.swift in Sources */,
+				8A57EEAD27557F0F00506F09 /* GameObservableObject.swift in Sources */,
+				8A4FCBFF274843E5004ABE4A /* RegisterModelController.swift in Sources */,
+				8A6C5F5D2747F890006B0863 /* Orientation.swift in Sources */,
+				8A6C5F5B2747F87B006B0863 /* GridHelper.swift in Sources */,
+				8A6C5F4F2747F839006B0863 /* Game.swift in Sources */,
+				8A6C5F512747F842006B0863 /* GameMode.swift in Sources */,
+				8A6C5F5F2747F898006B0863 /* Ship.swift in Sources */,
+				8A098575274C07CC003A56A8 /* HelperButtons.swift in Sources */,
+				8A92A26027441D9D000ACAC2 /* LoginModelController.swift in Sources */,
+				8A4FCBFB27484390004ABE4A /* GameViewController.swift in Sources */,
+				8A6C5F672747F8DD006B0863 /* FleetBattleGameDetails.swift in Sources */,
+				8A6C5F472747F7A4006B0863 /* PrepareGameViewController.swift in Sources */,
+				8A4BFEE627760CE8009B329C /* ShipHelper.swift in Sources */,
+				8A6C5F552747F856006B0863 /* Field.swift in Sources */,
+				8A41D59A27343436007AE13D /* AppDelegate.swift in Sources */,
+				8A4FCC032748440A004ABE4A /* PrepareGameModelController.swift in Sources */,
+				8A92A25627441D4E000ACAC2 /* OpenGamesView.swift in Sources */,
+				8A6C5F612747F8A4006B0863 /* ShipDetails.swift in Sources */,
+				8A4FCC01274843F7004ABE4A /* SingleplayerGameSettingsModelController.swift in Sources */,
+				8A4945D22785EF5B00031466 /* MultiplayerGameSettingsModelController.swift in Sources */,
+				8A4FCBF32748431E004ABE4A /* RegisterViewController.swift in Sources */,
+				8A6C5F652747F8CE006B0863 /* FleetBattleGame.swift in Sources */,
+				8A4FCBFD274843A3004ABE4A /* GameResultViewController.swift in Sources */,
+				8A4ACDC4276BB32E00F6D413 /* GameListItemView.swift in Sources */,
+				8A6C5F592747F86A006B0863 /* Position.swift in Sources */,
+				8A4E55C12790D764002002EF /* KeyboardHelper.swift in Sources */,
+				8A41D5BA27343B75007AE13D /* FirebaseAuthenticationPlugin.swift in Sources */,
+				8A4945CC2785EF3600031466 /* MultiplayerGameSettingsView.swift in Sources */,
+				8A6C5F6E27483806006B0863 /* LabelledDivider.swift in Sources */,
+				8A4C983B2788BF7C0098BCD7 /* FleetBattleKI.swift in Sources */,
+				8A4FCC0527484422004ABE4A /* OpenGamesModelController.swift in Sources */,
+				8A6C5F532747F84B006B0863 /* User.swift in Sources */,
+				8A92A25427441D3E000ACAC2 /* SingleplayerGameSettingsView.swift in Sources */,
+				8A92A25A27441D6C000ACAC2 /* GameView.swift in Sources */,
+				8A41D59C27343436007AE13D /* SceneDelegate.swift in Sources */,
+				8A92A25C27441D7A000ACAC2 /* GameResultView.swift in Sources */,
+				8A510B032749937400EFB4A1 /* StartView.swift in Sources */,
+				8A92A26227441DB1000ACAC2 /* AuthenticationService.swift in Sources */,
+				8A4FCC0727484431004ABE4A /* GameModelController.swift in Sources */,
+				8A4E3752276A958200278418 /* IdentifiableIndices.swift in Sources */,
+				8A57EEA727554DB200506F09 /* Serializable.swift in Sources */,
+				8A6C5F572747F85F006B0863 /* Grid.swift in Sources */,
+				8A4C98502788D8D50098BCD7 /* SnapshotListenerHelper.swift in Sources */,
+				8A57EEA92755512C00506F09 /* GameService.swift in Sources */,
+				8A4ACDC1276BA8C100F6D413 /* DateTimeHelper.swift in Sources */,
+				8A6C5F6C27482FC6006B0863 /* Values.swift in Sources */,
+				8A510B052749A97300EFB4A1 /* NavigationConfiguration.swift in Sources */,
+				8A4BFEE9277612E3009B329C /* PlaceShipFeedback.swift in Sources */,
+				8A6C5F632747F8C3006B0863 /* FleetBattleField.swift in Sources */,
+				8A4E374F276A64B300278418 /* TPRandom.swift in Sources */,
+				8A92A25027441D22000ACAC2 /* RegisterView.swift in Sources */,
+				8A6C5F692747F8E8006B0863 /* FleetBattleGrid.swift in Sources */,
+				8A4945CF2785EF4B00031466 /* MultiplayerGameSettingsViewController.swift in Sources */,
+				8A41D59E27343436007AE13D /* LoginView.swift in Sources */,
+				8A4C98232788BD850098BCD7 /* SnapshotListenerInterface.swift in Sources */,
+				8A92A25827441D5E000ACAC2 /* PrepareGameView.swift in Sources */,
+				8A4FCBF527484358004ABE4A /* MenuViewController.swift in Sources */,
+				8A6C5F4D2747F830006B0863 /* DifficultyLevel.swift in Sources */,
+				8A4FCBF727484371004ABE4A /* SingleplayerGameSettingsViewController.swift in Sources */,
+				8A92A25E27441D91000ACAC2 /* LoginViewController.swift in Sources */,
+				8A41D5B927343B75007AE13D /* FirebaseFirestorePlugin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8A41D5A427343438007AE13D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A41D5A527343438007AE13D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A41D5A827343438007AE13D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A41D5A927343438007AE13D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A41D5AB27343438007AE13D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5CF01FD96CB152CEA08383E /* Pods-FleetBattleGameForIOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FleetBattleGameForIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FleetBattleGameForIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thm.mow2.FleetBattleGameForIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A41D5AC27343438007AE13D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80FC005C4CCA4F79CEF967CE /* Pods-FleetBattleGameForIOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FleetBattleGameForIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FleetBattleGameForIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thm.mow2.FleetBattleGameForIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A41D59127343435007AE13D /* Build configuration list for PBXProject "FleetBattleGameForIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A41D5A827343438007AE13D /* Debug */,
+				8A41D5A927343438007AE13D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A41D5AA27343438007AE13D /* Build configuration list for PBXNativeTarget "FleetBattleGameForIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A41D5AB27343438007AE13D /* Debug */,
+				8A41D5AC27343438007AE13D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A41D58E27343435007AE13D /* Project object */;
+}
